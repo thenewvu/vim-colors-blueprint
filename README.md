@@ -8,8 +8,9 @@ A Vim/Neovim colorscheme was inspired by blueprints.
 Requirements
 ============
 
-* `set termguicolors` in your `.vimrc`: Read [this](https://gist.github.com/XVilka/8346728) to check if your terminal
-emulator supports it or not:
+* `set termguicolors` in your `.vimrc`: Read
+  [this](https://gist.github.com/XVilka/8346728) to check if your terminal
+  emulator supports it or not:
 
 Installation
 ============

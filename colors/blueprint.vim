@@ -30,7 +30,9 @@ let s:yellow        = { "gui": "#ffd479" }
 
 let s:fg1           = s:white
 let s:fg2           = s:blue
+let s:fg3           = s:dark_blue
 let s:bg1           = s:dark_blue
+let s:bg2           = s:blue
 
 function! s:h(group, style)
   execute "highlight" a:group
@@ -103,7 +105,7 @@ call s:h("Title",         {"fg": s:fg2})
 call s:h("Visual",        {"gui": "standout"}) 
 call s:h("VisualNOS",     {"gui": "standout"}) 
 call s:h("WarningMsg",    {"fg": s:yellow}) 
-call s:h("WildMenu",      {"fg": s:bg1, "bg": s:fg1, "gui": "standout"}) 
+call s:h("WildMenu",      {"fg": s:fg1, "bg": s:bg2}) 
 call s:h("Folded",        {"fg": s:fg2}) 
 call s:h("FoldColumn",    {"fg": s:fg2}) 
 call s:h("DiffAdd",       {"fg": s:green}) 
@@ -112,13 +114,13 @@ call s:h("DiffChange",    {"fg": s:yellow})
 call s:h("DiffText",      {"fg": s:fg1}) 
 call s:h("SignColumn",    {"fg": s:fg1}) 
 
-call s:h("Pmenu",         {"fg": s:bg1, "bg": s:fg1}) 
-call s:h("PmenuSel",      {"fg": s:fg1, "bg": s:bg1}) 
-call s:h("PmenuSbar",     {"fg": s:bg1, "bg": s:fg1}) 
-call s:h("PmenuThumb",    {"gui": "standout"}) 
-call s:h("TabLine",       {"fg": s:fg2, "bg": s:bg1}) 
-call s:h("TabLineSel",    {"fg": s:fg1, "bg": s:bg1}) 
-call s:h("TabLineFill",   {"fg": s:fg2, "bg": s:bg1}) 
+call s:h("Pmenu",         {"fg": s:fg3, "bg": s:bg2}) 
+call s:h("PmenuSel",      {"fg": s:fg1, "bg": s:bg2}) 
+call s:h("PmenuSbar",     {"fg": s:fg3, "bg": s:bg2}) 
+call s:h("PmenuThumb",    {"fg": s:fg1, "bg": s:bg2}) 
+call s:h("TabLine",       {"fg": s:fg3, "bg": s:bg2}) 
+call s:h("TabLineSel",    {"fg": s:fg1, "bg": s:bg2}) 
+call s:h("TabLineFill",   {"fg": s:fg3, "bg": s:bg2}) 
 call s:h("CursorColumn",  {"fg": s:fg1}) 
 call s:h("CursorLine",    {"fg": s:fg1}) 
 call s:h("ColorColumn",   {"fg": s:fg1}) 

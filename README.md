@@ -10,7 +10,7 @@ In the screenshot:
 * The iterm2 color preset: [./colors/blueprint.itermcolors](./colors/blueprint.itermcolors)
 * The font: [Script 12 Pitch PT](http://www.myfonts.com/fonts/bitstream/script-12-pitch/)
 * The buffer line: [ap/vim-buftabline](https://github.com/ap/vim-buftabline)
-* The tmux theme: [edkolev/tmuxline.vim](https://github.com/edkolev/tmuxline.vim] with below configs:
+* The tmux theme: [edkolev/tmuxline.vim](https://github.com/edkolev/tmuxline.vim) with below configs:
   ```
   let g:tmuxline_powerline_separators = 0
   let g:tmuxline_theme = 'vim_statusline_1'

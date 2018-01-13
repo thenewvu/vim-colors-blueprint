@@ -22,6 +22,38 @@ In the screenshot:
     \}
   ```
 
+Color Palette
+=============
+
+This color scheme actually uses only 6 colors below:
+
+```
+white      : #ffffff
+
+blue       : #008ec4
+dark_blue  : #1458A2
+
+red        : #ff7e79
+green      : #73fa79
+yellow     : #ffd479
+```
+
+But chosen colors follow also work pretty well as well:
+
+```
+background: #175faf
+foreground: #ffffff
+
+black:      #c0c0c0
+red:        #ff7e79
+green:      #73fa79
+yellow:     #ffd479
+blue:       #76d6ff
+magenta:    #ff8ad8
+cyan:       #73fdff
+white:      #ffffff
+```
+
 Requirements
 ============
 

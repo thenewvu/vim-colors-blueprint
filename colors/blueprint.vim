@@ -112,6 +112,7 @@ call s:h("DiffAdd",       {"fg": s:green})
 call s:h("DiffDelete",    {"fg": s:red}) 
 call s:h("DiffChange",    {"fg": s:yellow}) 
 call s:h("DiffText",      {"fg": s:fg1}) 
+call s:h("DiffFile",      {"fg": s:fg1, "gui": "underline"})
 call s:h("SignColumn",    {"fg": s:fg1}) 
 
 call s:h("Pmenu",         {"fg": s:fg3, "bg": s:bg2}) 

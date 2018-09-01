@@ -46,7 +46,7 @@ hi      TabLineSel guifg=none    guibg=#003E7F gui=none
 " -------------------------------
 " - File Navigation / Searching -
 " -------------------------------
-hi       Directory guifg=none    guibg=none    gui=underline
+hi       Directory guifg=none    guibg=none    gui=bold,underline
 hi          Search guifg=#d75f00 guibg=none    gui=none
 hi       IncSearch guifg=#d75f00 guibg=none    gui=none
 
@@ -64,15 +64,15 @@ hi         MoreMsg guifg=none    guibg=none    gui=none
 " --------------
 " - Visual aid -
 " --------------
-hi      MatchParen guifg=none    guibg=none    gui=underline
+hi      MatchParen guifg=none    guibg=none    gui=bold,underline
 hi          Visual guifg=none    guibg=#003E7F gui=none
 hi       VisualNOS guifg=none    guibg=#003E7F gui=none
 hi         NonText guifg=#5992c3 guibg=none    gui=none
-hi            Todo guifg=#4FF796 guibg=none    gui=italic
-hi      Underlined guifg=none    guibg=none    gui=underline
-hi           Error guifg=#dc322f guibg=none    gui=none
-hi        ErrorMsg guifg=#dc322f guibg=none    gui=none
-hi      WarningMsg guifg=#b58900 guibg=none    gui=none
+hi            Todo guifg=#4FF796 guibg=none    gui=bold,underline
+hi      Underlined guifg=none    guibg=none    gui=bold,underline
+hi           Error guifg=#FF7D7F guibg=none    gui=none
+hi        ErrorMsg guifg=#FF7D7F guibg=none    gui=none
+hi      WarningMsg guifg=#FF7D7F guibg=none    gui=none
 hi          Ignore guifg=#0051A8 guibg=none    gui=none
 hi      SpecialKey guifg=#4FF796 guibg=none    gui=none
 
@@ -129,9 +129,9 @@ hi         Typedef guifg=none    guibg=none    gui=none
 " --------------------------------
 hi         DiffAdd guifg=#4FF796 guibg=none    gui=none
 hi      DiffChange guifg=none    guibg=none    gui=none
-hi      DiffDelete guifg=none    guibg=none    gui=none
+hi      DiffDelete guifg=#FF7D7F guibg=none    gui=none
 hi        DiffText guifg=#FF7D7F guibg=none    gui=none
-hi        DiffFile guifg=#4FF796 guibg=none    gui=none
+hi        DiffFile guifg=none    guibg=none    gui=bold,underline
 
 hi            link diffAdded           DiffAdd
 hi            link diffRemoved      DiffDelete
@@ -147,10 +147,10 @@ hi      PmenuThumb guifg=#5992c3 guibg=#003E7F gui=none
 " --------------------------------
 " Spelling
 " --------------------------------
-hi        SpellBad guifg=none    guibg=none    gui=underline
-hi        SpellCap guifg=none    guibg=none    gui=underline
-hi      SpellLocal guifg=none    guibg=none    gui=underline
-hi       SpellRare guifg=none    guibg=none    gui=underline
+hi        SpellBad guifg=none    guibg=none    gui=bold,underline
+hi        SpellCap guifg=none    guibg=none    gui=bold,underline
+hi      SpellLocal guifg=none    guibg=none    gui=bold,underline
+hi       SpellRare guifg=none    guibg=none    gui=bold,underline
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |

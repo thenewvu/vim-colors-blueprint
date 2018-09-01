@@ -47,8 +47,8 @@ hi      TabLineSel guifg=none    guibg=#003E7F gui=none
 " - File Navigation / Searching -
 " -------------------------------
 hi       Directory guifg=none    guibg=none    gui=bold,underline
-hi          Search guifg=#d75f00 guibg=none    gui=none
-hi       IncSearch guifg=#d75f00 guibg=none    gui=none
+hi          Search guifg=#FF7D7F guibg=none    gui=none
+hi       IncSearch guifg=#FF7D7F guibg=none    gui=none
 
 " -----------------
 " - Prompt/Status -
@@ -113,16 +113,16 @@ hi           Debug guifg=#4FF796 guibg=none    gui=none
 " ----------
 " - C like -
 " ----------
-hi         PreProc guifg=none    guibg=none    gui=none
-hi         Include guifg=none    guibg=none    gui=none
-hi          Define guifg=none    guibg=none    gui=none
-hi           Macro guifg=none    guibg=none    gui=none
-hi       PreCondit guifg=none    guibg=none    gui=none
+hi         PreProc guifg=#4FF796 guibg=none    gui=none
+hi         Include guifg=#4FF796 guibg=none    gui=none
+hi          Define guifg=#4FF796 guibg=none    gui=none
+hi           Macro guifg=#4FF796 guibg=none    gui=none
+hi       PreCondit guifg=#4FF796 guibg=none    gui=none
 
 hi            Type guifg=none    guibg=none    gui=none
 hi    StorageClass guifg=none    guibg=none    gui=none
-hi       Structure guifg=none    guibg=none    gui=none
-hi         Typedef guifg=none    guibg=none    gui=none
+hi       Structure guifg=#4FF796 guibg=none    gui=none
+hi         Typedef guifg=#4FF796 guibg=none    gui=none
 
 " --------------------------------
 " Diff

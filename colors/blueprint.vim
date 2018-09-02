@@ -20,8 +20,8 @@ let g:colors_name="blueprint"
 " --------------------------------
 " Editor settings
 " --------------------------------
-hi          Normal guifg=#ffffff guibg=#0051A8 gui=none
-hi          Cursor guifg=#0051A8 guibg=#ffffff gui=none
+hi          Normal guifg=#f0f0f0 guibg=#0051A8 gui=none
+hi          Cursor guifg=#0051A8 guibg=#f0f0f0 gui=none
 hi      CursorLine guifg=none    guibg=#003E7F gui=none
 hi          LineNr guifg=#5992c3 guibg=none    gui=none
 hi    CursorLineNR guifg=none    guibg=#003E7F gui=none

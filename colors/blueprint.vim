@@ -46,9 +46,9 @@ hi      TabLineSel guifg=none    guibg=#2c4e6c gui=none
 " -------------------------------
 " - File Navigation / Searching -
 " -------------------------------
-hi       Directory guifg=none    guibg=none    gui=bold,underline
-hi          Search guifg=none    guibg=none    gui=bold,underline,italic
-hi       IncSearch guifg=none    guibg=none    gui=bold,underline,italic
+hi       Directory guifg=none    guibg=none    gui=underline
+hi          Search guifg=#2c4e6c guibg=#97E483 gui=none
+hi       IncSearch guifg=#2c4e6c guibg=#97E483 gui=none
 
 " -----------------
 " - Prompt/Status -
@@ -64,7 +64,7 @@ hi         MoreMsg guifg=none    guibg=none    gui=none
 " --------------
 " - Visual aid -
 " --------------
-hi      MatchParen guifg=none    guibg=none    gui=bold,underline,italic
+hi      MatchParen guifg=none    guibg=none    gui=underline
 hi          Visual guifg=none    guibg=#2c4e6c gui=none
 hi       VisualNOS guifg=none    guibg=#2c4e6c gui=none
 hi         NonText guifg=#74a0c7 guibg=none    gui=none
@@ -94,7 +94,7 @@ hi        Function guifg=none    guibg=none    gui=none
 " --------------------------------
 " Language constructs
 " --------------------------------
-hi         Comment guifg=#74a0c7 guibg=none    gui=italic
+hi         Comment guifg=#74a0c7 guibg=none    gui=none
 
 hi       Statement guifg=#97e483 guibg=none    gui=none
 hi     Conditional guifg=#97e483 guibg=none    gui=none
@@ -108,7 +108,7 @@ hi         Special guifg=none    guibg=none    gui=none
 hi     SpecialChar guifg=none    guibg=none    gui=none
 hi             Tag guifg=#74a0c7 guibg=none    gui=none
 hi       Delimiter guifg=#74a0c7 guibg=none    gui=none
-hi  SpecialComment guifg=#97e483 guibg=none    gui=italic
+hi  SpecialComment guifg=#97e483 guibg=none    gui=none
 hi           Debug guifg=#97e483 guibg=none    gui=none
 
 " ----------
@@ -128,11 +128,11 @@ hi         Typedef guifg=#97e483 guibg=none    gui=none
 " --------------------------------
 " Diff
 " --------------------------------
-hi         DiffAdd guifg=none    guibg=#1A8FBF gui=none
-hi      DiffChange guifg=none    guibg=#2c4e6c gui=none
-hi      DiffDelete guifg=none    guibg=#665E7F gui=none
-hi        DiffText guifg=none    guibg=#1A8FBF gui=none
-hi        DiffFile guifg=none    guibg=none    gui=bold,underline,italic
+hi         DiffAdd guifg=none    guibg=#25415a gui=none
+hi      DiffChange guifg=none    guibg=#305575 gui=none
+hi      DiffDelete guifg=#497296 guibg=#305575 gui=none
+hi        DiffText guifg=none    guibg=#25415a gui=none
+hi        DiffFile guifg=none    guibg=none    gui=underline
 
 hi            link diffAdded           DiffAdd
 hi            link diffRemoved      DiffDelete

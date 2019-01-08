@@ -47,8 +47,8 @@ hi      TabLineSel guifg=none    guibg=#2c4e6c gui=none
 " - File Navigation / Searching -
 " -------------------------------
 hi       Directory guifg=none    guibg=none    gui=underline
-hi          Search guifg=#2c4e6c guibg=#97E483 gui=none
-hi       IncSearch guifg=#2c4e6c guibg=#97E483 gui=none
+hi          Search guifg=#2c4e6c guibg=#f9f871 gui=none
+hi       IncSearch guifg=#2c4e6c guibg=#f9f871 gui=none
 
 " -----------------
 " - Prompt/Status -
@@ -128,14 +128,11 @@ hi         Typedef guifg=#97e483 guibg=none    gui=none
 " --------------------------------
 " Diff
 " --------------------------------
-hi         DiffAdd guifg=none    guibg=#25415a gui=none
+hi         DiffAdd guifg=#2c4e6c guibg=#97e483 gui=none
 hi      DiffChange guifg=none    guibg=#305575 gui=none
-hi      DiffDelete guifg=#497296 guibg=#305575 gui=none
-hi        DiffText guifg=none    guibg=#25415a gui=none
+hi      DiffDelete guifg=#497296 guibg=#25415a gui=none
+hi        DiffText guifg=#2c4e6c guibg=#f9f871 gui=none
 hi        DiffFile guifg=none    guibg=none    gui=underline
-
-hi            link diffAdded           DiffAdd
-hi            link diffRemoved      DiffDelete
 
 " --------------------------------
 " Completion menu
@@ -156,3 +153,33 @@ hi       SpellRare guifg=#ff6681 guibg=none    gui=none
 "--------------------------------------------------------------------
 " Specific settings                                                 |
 "--------------------------------------------------------------------
+
+hi  link diffAdded               DiffAdd
+hi  link diffRemoved             DiffDelete
+
+hi! link gitDateHeader           gitIdentityHeader
+hi! link gitIdentityHeader       gitIdentityKeyword
+hi! link gitIdentityKeyword      Label
+hi! link gitNotesHeader          gitKeyword
+hi! link gitReflogHeader         gitKeyword
+hi! link gitKeyword              Keyword
+hi! link gitIdentity             String
+hi! link gitEmailDelimiter       Delimiter
+hi! link gitEmail                Special
+hi! link gitDate                 Number
+hi! link gitMode                 Number
+hi! link gitHashAbbrev           gitHash
+hi! link gitHash                 Identifier
+hi! link gitReflogMiddle         gitReference
+hi! link gitReference            Function
+hi! link gitStage                gitType
+hi! link gitType                 Type
+hi! link gitDiffAdded            diffAdded
+hi! link gitDiffRemoved          diffRemoved
+hi! link gitcommitDiscardedFile  diffRemoved
+hi! link gitcommitSelectedFile   diffAdded
+hi! link gitcommitUnmergedFile   WarningMsg
+hi! link gitcommitDiscardedArrow gitcommitDiscardedFile
+hi! link gitcommitSelectedArrow  gitcommitSelectedFile
+hi! link gitcommitUnmergedArrow  gitcommitUnmergedFile
+

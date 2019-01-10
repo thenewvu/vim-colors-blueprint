@@ -47,8 +47,8 @@ hi      TabLineSel guifg=none    guibg=#2c4e6c gui=none
 " - File Navigation / Searching -
 " -------------------------------
 hi       Directory guifg=none    guibg=none    gui=underline
-hi          Search guifg=#2c4e6c guibg=#f9f871 gui=none
-hi       IncSearch guifg=#2c4e6c guibg=#f9f871 gui=none
+hi          Search guifg=none    guibg=none    gui=standout
+hi       IncSearch guifg=none    guibg=none    gui=standout
 
 " -----------------
 " - Prompt/Status -
@@ -145,10 +145,10 @@ hi      PmenuThumb guifg=#74a0c7 guibg=#2c4e6c gui=none
 " --------------------------------
 " Spelling
 " --------------------------------
-hi        SpellBad guifg=#ff6681 guibg=none    gui=none
-hi        SpellCap guifg=#ff6681 guibg=none    gui=none
-hi      SpellLocal guifg=#ff6681 guibg=none    gui=none
-hi       SpellRare guifg=#ff6681 guibg=none    gui=none
+hi        SpellBad guifg=none    guibg=#ff6681 gui=none
+hi        SpellCap guifg=none    guibg=#ff6681 gui=none
+hi      SpellLocal guifg=none    guibg=#ff6681 gui=none
+hi       SpellRare guifg=none    guibg=#ff6681 gui=none
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |

@@ -145,10 +145,10 @@ hi      PmenuThumb guifg=#74a0c7 guibg=#2c4e6c gui=none
 " --------------------------------
 " Spelling
 " --------------------------------
-hi        SpellBad guifg=none    guibg=#ff6681 gui=none
-hi        SpellCap guifg=none    guibg=#ff6681 gui=none
-hi      SpellLocal guifg=none    guibg=#ff6681 gui=none
-hi       SpellRare guifg=none    guibg=#ff6681 gui=none
+hi        SpellBad guifg=#2c4e6c guibg=#ff6681 gui=none
+hi        SpellCap guifg=#2c4e6c guibg=#ff6681 gui=none
+hi      SpellLocal guifg=#2c4e6c guibg=#ff6681 gui=none
+hi       SpellRare guifg=#2c4e6c guibg=#ff6681 gui=none
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |

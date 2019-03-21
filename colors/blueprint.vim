@@ -137,7 +137,7 @@ hi           Debug guifg=#97e483 guibg=none    gui=none
 hi         PreProc guifg=#97e483 guibg=none    gui=none
 hi         Include guifg=#97e483 guibg=none    gui=none
 hi          Define guifg=#97e483 guibg=none    gui=none
-hi           Macro guifg=#97e483 guibg=none    gui=none
+hi           Macro guifg=none    guibg=none    gui=none
 hi       PreCondit guifg=#97e483 guibg=none    gui=none
 
 hi            Type guifg=none    guibg=none    gui=none

@@ -212,9 +212,6 @@ hi! GitGutterAdd     guifg=#437f43 guibg=#437f43
 hi! GitGutterChange  guifg=#7f7f43 guibg=#7f7f43 
 hi! GitGutterDelete  guifg=#a05454 guibg=#a05454 
 
-hi! link LspDiagnosticsDefaultError Underlined
-hi! link LspDiagnosticsDefaultWarning Underlined
-
 hi! link LspDiagnosticsUnderlineError Underlined
 hi! link LspDiagnosticsUnderlineWarning Underlined
 

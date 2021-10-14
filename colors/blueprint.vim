@@ -220,6 +220,9 @@ hi     LspDiagnosticsVirtualTextWarning guifg=#7f7f43 guibg=#2c4e6c gui=none
 hi LspDiagnosticsVirtualTextInformation guifg=#7f7f43 guibg=#2c4e6c gui=none
 hi        LspDiagnosticsVirtualTextHint guifg=#7f7f43 guibg=#2c4e6c gui=none
 
+" for lukas-reineke/indent-blankline.nvim
+hi! link IndentBlanklineChar VertSplit
+
 let g:terminal_color_background = "#335b7e"
 let g:terminal_color_foreground = "#ffffff"
 

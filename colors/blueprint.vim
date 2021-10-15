@@ -220,6 +220,15 @@ hi     LspDiagnosticsVirtualTextWarning guifg=#7f7f43 guibg=#2c4e6c gui=none
 hi LspDiagnosticsVirtualTextInformation guifg=#7f7f43 guibg=#2c4e6c gui=none
 hi        LspDiagnosticsVirtualTextHint guifg=#7f7f43 guibg=#2c4e6c gui=none
 
+hi                      DiagnosticError guifg=#a05454 guibg=#2c4e6c gui=none
+hi                       DiagnosticWarn guifg=#7f7f43 guibg=#2c4e6c gui=none
+hi                       DiagnosticInfo guifg=#7f7f43 guibg=#2c4e6c gui=none
+hi                       DiagnosticHint guifg=#7f7f43 guibg=#2c4e6c gui=none
+hi             DiagnosticUnderlineError gui=underline
+hi              DiagnosticUnderlineWarn gui=underline
+hi              DiagnosticUnderlineInfo gui=underline
+hi              DiagnosticUnderlineHint gui=underline
+
 " for lukas-reineke/indent-blankline.nvim
 hi! link IndentBlanklineChar VertSplit
 

@@ -160,8 +160,8 @@ hi        DiffFile guifg=none    guibg=none    gui=underline
 " Completion menu
 " --------------------------------
 hi           Pmenu guifg=#74a0c7 guibg=#2c4e6c gui=none
-hi        PmenuSel guifg=none    guibg=#2c4e6c gui=none
-hi       PmenuSbar guifg=#74a0c7 guibg=#2c4e6c gui=none
+hi        PmenuSel guifg=#2c4e6c guibg=#ffffff gui=none
+hi       PmenuSbar guifg=#2c4e6c guibg=#ffffff gui=none
 hi      PmenuThumb guifg=#74a0c7 guibg=#2c4e6c gui=none
 
 " --------------------------------

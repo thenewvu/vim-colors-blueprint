@@ -213,22 +213,25 @@ hi! GitGutterAdd     guifg=#437f43 guibg=#437f43
 hi! GitGutterChange  guifg=#7f7f43 guibg=#7f7f43 
 hi! GitGutterDelete  guifg=#a05454 guibg=#a05454 
 
-hi! link LspDiagnosticsUnderlineError Underlined
-hi! link LspDiagnosticsUnderlineWarning Underlined
-
 hi       LspDiagnosticsVirtualTextError guifg=#a05454 guibg=#2c4e6c gui=none
 hi     LspDiagnosticsVirtualTextWarning guifg=#7f7f43 guibg=#2c4e6c gui=none
 hi LspDiagnosticsVirtualTextInformation guifg=#7f7f43 guibg=#2c4e6c gui=none
 hi        LspDiagnosticsVirtualTextHint guifg=#7f7f43 guibg=#2c4e6c gui=none
 
-hi                      DiagnosticError guifg=#a05454 guibg=#2c4e6c gui=none
-hi                       DiagnosticWarn guifg=#7f7f43 guibg=#2c4e6c gui=none
-hi                       DiagnosticInfo guifg=#7f7f43 guibg=#2c4e6c gui=none
-hi                       DiagnosticHint guifg=#7f7f43 guibg=#2c4e6c gui=none
-hi             DiagnosticUnderlineError gui=underline
-hi              DiagnosticUnderlineWarn gui=underline
-hi              DiagnosticUnderlineInfo gui=underline
-hi              DiagnosticUnderlineHint gui=underline
+hi! link DiagnosticError      LspDiagnosticsVirtualTextError
+hi! link DiagnosticWarn     LspDiagnosticsVirtualTextWarning
+hi! link DiagnosticInfo LspDiagnosticsVirtualTextInformation
+hi! link DiagnosticHint        LspDiagnosticsVirtualTextHint
+
+hi LspDiagnosticsUnderlineError        guifg=#edabb8 guibg=#2c4e6c gui=none
+hi LspDiagnosticsUnderlineWarning      guifg=#ede0ab guibg=#2c4e6c gui=none
+hi LspDiagnosticsUnderlineInformation  guifg=#ede0ab guibg=#2c4e6c gui=none
+hi LspDiagnosticsUnderlineHint         guifg=#ede0ab guibg=#2c4e6c gui=none
+
+hi! link DiagnosticUnderlineError       LspDiagnosticsUnderlineError
+hi! link DiagnosticUnderlineWarn      LspDiagnosticsUnderlineWarning
+hi! link DiagnosticUnderlineInfo  LspDiagnosticsUnderlineInformation
+hi! link DiagnosticUnderlineHint         LspDiagnosticsUnderlineHint
 
 " for lukas-reineke/indent-blankline.nvim
 hi! link IndentBlanklineChar VertSplit

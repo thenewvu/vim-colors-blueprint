@@ -41,7 +41,7 @@ let g:colors_name="blueprint"
 " Editor settings
 " --------------------------------
 hi          Normal guifg=#ffffff guibg=#335b7e gui=none
-hi          Cursor guifg=#305575 guibg=#ede0ab gui=none
+hi          Cursor guifg=#305575 guibg=#e0abed gui=none
 hi      CursorLine guifg=none    guibg=#2c4e6c gui=none
 hi          LineNr guifg=#74a0c7 guibg=none    gui=none
 hi    CursorLineNR guifg=none    guibg=none    gui=none
@@ -213,20 +213,20 @@ hi! GitGutterAdd     guifg=#437f43 guibg=#437f43
 hi! GitGutterChange  guifg=#7f7f43 guibg=#7f7f43 
 hi! GitGutterDelete  guifg=#a05454 guibg=#a05454 
 
-hi       LspDiagnosticsVirtualTextError guifg=#a05454 guibg=#2c4e6c gui=none
-hi     LspDiagnosticsVirtualTextWarning guifg=#7f7f43 guibg=#2c4e6c gui=none
-hi LspDiagnosticsVirtualTextInformation guifg=#7f7f43 guibg=#2c4e6c gui=none
-hi        LspDiagnosticsVirtualTextHint guifg=#7f7f43 guibg=#2c4e6c gui=none
+hi! link       LspDiagnosticsVirtualTextError ErrorMsg
+hi! link     LspDiagnosticsVirtualTextWarning WarningMsg
+hi! link LspDiagnosticsVirtualTextInformation WarningMsg
+hi! link        LspDiagnosticsVirtualTextHint WarningMsg
 
 hi! link DiagnosticError      LspDiagnosticsVirtualTextError
 hi! link DiagnosticWarn     LspDiagnosticsVirtualTextWarning
 hi! link DiagnosticInfo LspDiagnosticsVirtualTextInformation
 hi! link DiagnosticHint        LspDiagnosticsVirtualTextHint
 
-hi LspDiagnosticsUnderlineError        guifg=#edabb8 guibg=#2c4e6c gui=none
-hi LspDiagnosticsUnderlineWarning      guifg=#ede0ab guibg=#2c4e6c gui=none
-hi LspDiagnosticsUnderlineInformation  guifg=#ede0ab guibg=#2c4e6c gui=none
-hi LspDiagnosticsUnderlineHint         guifg=#ede0ab guibg=#2c4e6c gui=none
+hi! link LspDiagnosticsUnderlineError        ErrorMsg
+hi! link LspDiagnosticsUnderlineWarning      WarningMsg
+hi! link LspDiagnosticsUnderlineInformation  WarningMsg
+hi! link LspDiagnosticsUnderlineHint         WarningMsg
 
 hi! link DiagnosticUnderlineError       LspDiagnosticsUnderlineError
 hi! link DiagnosticUnderlineWarn      LspDiagnosticsUnderlineWarning

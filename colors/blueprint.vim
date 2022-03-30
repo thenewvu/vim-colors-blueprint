@@ -271,3 +271,9 @@ let g:terminal_color_14 = "#abede0"
 let g:terminal_color_7 = "#ffffff"
 let g:terminal_color_15 = "#ffffff"
 
+hi IndentBlanklineIndent2 guifg=#6a8955 gui=nocombine
+hi IndentBlanklineIndent3 guifg=#3c7f88 gui=nocombine
+hi IndentBlanklineIndent4 guifg=#447aa7 gui=nocombine
+hi IndentBlanklineIndent5 guifg=#a08656 gui=nocombine
+hi IndentBlanklineIndent6 guifg=#9d4c52 gui=nocombine
+hi IndentBlanklineIndent1 guifg=#8b549b gui=nocombine

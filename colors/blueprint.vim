@@ -41,7 +41,9 @@ let g:colors_name="blueprint"
 " Editor settings
 " --------------------------------
 hi          Normal guifg=#ffffff guibg=#335b7e gui=none
-hi          Cursor guifg=#305575 guibg=#e0abed gui=none
+hi          Cursor guifg=#305575 guibg=#ffffff gui=none
+hi         vCursor guifg=#305575 guibg=#ffffff gui=none
+hi         iCursor guifg=#305575 guibg=#ffffff gui=none
 hi      CursorLine guifg=none    guibg=#2c4e6c gui=none
 hi          LineNr guifg=#74a0c7 guibg=none    gui=none
 hi    CursorLineNR guifg=none    guibg=none    gui=none
@@ -68,8 +70,8 @@ hi     FloatBorder guifg=#74a0c7 guibg=#2c4e6c gui=none
 " - File Navigation / Searching -
 " -------------------------------
 hi       Directory guifg=none    guibg=none    gui=underline
-hi          Search guifg=#2c4e6c guibg=#ffffff gui=none
-hi       IncSearch guifg=#2c4e6c guibg=#ffffff gui=none
+hi          Search guifg=none    guibg=none    gui=standout
+hi       IncSearch guifg=none    guibg=none    gui=standout
 
 " -----------------
 " - Prompt/Status -
@@ -86,14 +88,14 @@ hi         MoreMsg guifg=#ede0ab guibg=none    gui=none
 " - Visual aid -
 " --------------
 hi      MatchParen guifg=none    guibg=none    gui=underline
-hi          Visual guifg=#2c4e6c guibg=#ffffff gui=none
-hi       VisualNOS guifg=#2c4e6c guibg=#ffffff gui=none
+hi          Visual guifg=none    guibg=none    gui=standout
+hi       VisualNOS guifg=none    guibg=none    gui=standout
 hi         NonText guifg=#2c4e6c guibg=none    gui=none
-hi            Todo guifg=#ede0ab guibg=none    gui=none
+hi            Todo guifg=none    guibg=#7f7f43 gui=none
 hi      Underlined guifg=none    guibg=none    gui=underline
-hi           Error guifg=#335b7e guibg=#edabb8 gui=none
-hi        ErrorMsg guifg=#335b7e guibg=#edabb8 gui=none
-hi      WarningMsg guifg=#335b7e guibg=#ede0ab gui=none
+hi           Error guifg=none    guibg=#a05454 gui=none
+hi        ErrorMsg guifg=none    guibg=#a05454 gui=none
+hi      WarningMsg guifg=none    guibg=#7f7f43 gui=none
 hi          Ignore guifg=#335b7e guibg=none    gui=none
 hi         Conceal guifg=#abede0 guibg=none    gui=none
 hi      SpecialKey guifg=#abede0 guibg=none    gui=none
@@ -160,18 +162,18 @@ hi        DiffFile guifg=none    guibg=none    gui=underline
 " --------------------------------
 " Completion menu
 " --------------------------------
-hi           Pmenu guifg=#74a0c7 guibg=#2c4e6c gui=none
-hi        PmenuSel guifg=#2c4e6c guibg=#ffffff gui=none
-hi       PmenuSbar guifg=#2c4e6c guibg=#ffffff gui=none
-hi      PmenuThumb guifg=#74a0c7 guibg=#2c4e6c gui=none
+hi           Pmenu guifg=#ffffff guibg=#74a0c7 gui=none
+hi        PmenuSel guifg=none    guibg=none    gui=standout
+hi       PmenuSbar guifg=none    guibg=none    gui=standout
+hi      PmenuThumb guifg=#ffffff guibg=#74a0c7 gui=none
 
 " --------------------------------
 " Spelling
 " --------------------------------
-hi        SpellBad guifg=#edabb8 guibg=none    gui=underline
-hi        SpellCap guifg=#ede0ab guibg=none    gui=underline
-hi      SpellLocal guifg=#ede0ab guibg=none    gui=underline
-hi       SpellRare guifg=#ede0ab guibg=none    gui=underline
+hi        SpellBad guifg=none    guibg=#7f7f43 gui=underline
+hi        SpellCap guifg=none    guibg=#7f7f43 gui=underline
+hi      SpellLocal guifg=none    guibg=#7f7f43 gui=underline
+hi       SpellRare guifg=none    guibg=#7f7f43 gui=underline
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |

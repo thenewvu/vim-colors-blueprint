@@ -88,8 +88,8 @@ hi         MoreMsg guifg=#ede0ab guibg=none    gui=none
 " - Visual aid -
 " --------------
 hi      MatchParen guifg=none    guibg=none    gui=underline
-hi          Visual guifg=none    guibg=none    gui=standout
-hi       VisualNOS guifg=none    guibg=none    gui=standout
+hi          Visual guifg=none    guibg=#2c4e6c gui=standout
+hi       VisualNOS guifg=none    guibg=#2c4e6c gui=standout
 hi         NonText guifg=#2c4e6c guibg=none    gui=none
 hi            Todo guifg=none    guibg=#7f7f43 gui=none
 hi      Underlined guifg=none    guibg=none    gui=underline

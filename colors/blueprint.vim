@@ -70,8 +70,8 @@ hi     FloatBorder guifg=#74a0c7 guibg=#2c4e6c gui=none
 " - File Navigation / Searching -
 " -------------------------------
 hi       Directory guifg=none    guibg=none    gui=underline
-hi          Search guifg=none    guibg=none    gui=standout
-hi       IncSearch guifg=none    guibg=none    gui=standout
+hi          Search guifg=#2c4e6c guibg=#ffffff gui=none
+hi       IncSearch guifg=#2c4e6c guibg=#ffffff gui=none
 
 " -----------------
 " - Prompt/Status -
@@ -88,8 +88,8 @@ hi         MoreMsg guifg=#ede0ab guibg=none    gui=none
 " - Visual aid -
 " --------------
 hi      MatchParen guifg=none    guibg=none    gui=underline
-hi          Visual guifg=none    guibg=#2c4e6c gui=standout
-hi       VisualNOS guifg=none    guibg=#2c4e6c gui=standout
+hi          Visual guifg=#2c4e6c guibg=#ffffff gui=none
+hi       VisualNOS guifg=#2c4e6c guibg=#ffffff gui=none
 hi         NonText guifg=#2c4e6c guibg=none    gui=none
 hi            Todo guifg=none    guibg=#7f7f43 gui=none
 hi      Underlined guifg=none    guibg=none    gui=underline

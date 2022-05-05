@@ -41,9 +41,9 @@ let g:colors_name="blueprint"
 " Editor settings
 " --------------------------------
 hi          Normal guifg=#ffffff guibg=#335b7e gui=none
-hi          Cursor guifg=#305575 guibg=#ffffff gui=none
-hi         vCursor guifg=#305575 guibg=#ffffff gui=none
-hi         iCursor guifg=#305575 guibg=#ffffff gui=none
+hi          Cursor guifg=#2c4e6c guibg=#abede0 gui=none
+hi         vCursor guifg=#2c4e6c guibg=#abede0 gui=none
+hi         iCursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi      CursorLine guifg=none    guibg=#2c4e6c gui=none
 hi          LineNr guifg=#74a0c7 guibg=none    gui=none
 hi    CursorLineNR guifg=none    guibg=none    gui=none
@@ -162,10 +162,10 @@ hi        DiffFile guifg=none    guibg=none    gui=underline
 " --------------------------------
 " Completion menu
 " --------------------------------
-hi           Pmenu guifg=#ffffff guibg=#74a0c7 gui=none
+hi           Pmenu guifg=none    guibg=#2c4e6c gui=none
 hi        PmenuSel guifg=none    guibg=none    gui=standout
 hi       PmenuSbar guifg=none    guibg=none    gui=standout
-hi      PmenuThumb guifg=#ffffff guibg=#74a0c7 gui=none
+hi      PmenuThumb guifg=none    guibg=#2c4e6c gui=none
 
 " --------------------------------
 " Spelling

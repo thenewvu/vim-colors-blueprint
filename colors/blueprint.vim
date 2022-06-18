@@ -273,9 +273,67 @@ let g:terminal_color_14 = "#abede0"
 let g:terminal_color_7 = "#ffffff"
 let g:terminal_color_15 = "#ffffff"
 
-hi IndentBlanklineIndent2 guifg=#6a8955 gui=nocombine
-hi IndentBlanklineIndent3 guifg=#3c7f88 gui=nocombine
-hi IndentBlanklineIndent4 guifg=#447aa7 gui=nocombine
-hi IndentBlanklineIndent5 guifg=#a08656 gui=nocombine
-hi IndentBlanklineIndent6 guifg=#9d4c52 gui=nocombine
-hi IndentBlanklineIndent1 guifg=#8b549b gui=nocombine
+hi IndentBlanklineIndent2     guifg=#6a8955 gui=nocombine
+hi IndentBlanklineIndent3     guifg=#3c7f88 gui=nocombine
+hi IndentBlanklineIndent4     guifg=#447aa7 gui=nocombine
+hi IndentBlanklineIndent5     guifg=#a08656 gui=nocombine
+hi IndentBlanklineIndent6     guifg=#9d4c52 gui=nocombine
+hi IndentBlanklineIndent1     guifg=#8b549b gui=nocombine
+hi IndentBlanklineContextChar guifg=#abede0 gui=nocombine
+
+
+hi!      TSStrong guifg=none guibg=none gui=bold
+hi!      TSEmphasis guifg=none guibg=none gui=italic
+hi!      TSUnderline guifg=none guibg=none gui=underline
+hi! link TSNote Todo
+hi! link TSWarning WarningMsg
+hi! link TSDanger ErrorMsg
+hi! link TSAnnotation TSEmphasis
+hi! link TSAttribute TSEmphasis
+hi! link TSBoolean Boolean
+hi! link TSCharacter Constant
+hi! link TSComment Comment
+hi! link TSConditional Conditional
+hi! link TSConstBuiltin Constant
+hi! link TSConstMacro Constant
+hi! link TSConstant Constant
+hi! link TSConstructor Function
+hi! link TSException Exception
+hi! link TSField Normal
+hi! link TSFloat Float
+hi! link TSFuncBuiltin Function
+hi! link TSFuncMacro Function
+hi! link TSFunction Function
+hi! link TSInclude PreProc
+hi! link TSKeyword Keyword
+hi! link TSKeywordFunction Keyword
+hi! link TSKeywordOperator Keyword
+hi! link TSLabel Label
+hi! link TSMethod Function
+hi! link TSNamespace PreProc
+hi! link TSNone NonText
+hi! link TSNumber Number
+hi! link TSOperator Operator
+hi! link TSParameter Normal
+hi! link TSParameterReference Normal
+hi! link TSProperty Normal
+hi! link TSPunctBracket Noise
+hi! link TSPunctDelimiter Noise
+hi! link TSPunctSpecial Special
+hi! link TSRepeat Repeat
+hi! link TSStorageClass StorageClass
+hi! link TSString String
+hi! link TSStringEscape Special
+hi! link TSStringRegex Special
+hi! link TSStructure Structure
+hi! link TSSymbol Constant
+hi! link TSTag Tag
+hi! link TSTagDelimiter Noise
+hi! link TSText Normal
+hi! link TSStrike ErrorMsg
+hi! link TSMath Constant
+hi! link TSType Type
+hi! link TSTypeBuiltin Type
+hi! link TSURI String
+hi! link TSVariable Identifier
+hi! link TSVariableBuiltin Identifier

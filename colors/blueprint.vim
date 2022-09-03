@@ -78,11 +78,15 @@ hi       IncSearch guifg=#2c4e6c guibg=#ffffff gui=none
 " -----------------
 hi      StatusLine guifg=#74a0c7 guibg=#2c4e6c gui=none
 hi    StatusLineNC guifg=#74a0c7 guibg=#2c4e6c gui=none
+hi          WinBar guifg=#74a0c7 guibg=#2c4e6c gui=none
+hi        WinBarNC guifg=#74a0c7 guibg=#2c4e6c gui=none
 hi        WildMenu guifg=#74a0c7 guibg=#2c4e6c gui=none
 hi        Question guifg=#ede0ab guibg=none    gui=none
 hi           Title guifg=#ede0ab guibg=none    gui=none
 hi         ModeMsg guifg=#ede0ab guibg=none    gui=none
 hi         MoreMsg guifg=#ede0ab guibg=none    gui=none
+hi         MsgArea guifg=#ede0ab guibg=none    gui=none
+
 
 " --------------
 " - Visual aid -
@@ -273,14 +277,13 @@ let g:terminal_color_14 = "#abede0"
 let g:terminal_color_7 = "#ffffff"
 let g:terminal_color_15 = "#ffffff"
 
-hi IndentBlanklineIndent2     guifg=#6a8955 gui=nocombine
-hi IndentBlanklineIndent3     guifg=#3c7f88 gui=nocombine
-hi IndentBlanklineIndent4     guifg=#447aa7 gui=nocombine
-hi IndentBlanklineIndent5     guifg=#a08656 gui=nocombine
+hi IndentBlanklineIndent1     guifg=#6a8955 gui=nocombine
+hi IndentBlanklineIndent2     guifg=#3c7f88 gui=nocombine
+hi IndentBlanklineIndent3     guifg=#447aa7 gui=nocombine
+hi IndentBlanklineIndent4     guifg=#a08656 gui=nocombine
+hi IndentBlanklineIndent5     guifg=#8b549b gui=nocombine
 hi IndentBlanklineIndent6     guifg=#9d4c52 gui=nocombine
-hi IndentBlanklineIndent1     guifg=#8b549b gui=nocombine
 hi IndentBlanklineContextChar guifg=#abede0 gui=nocombine
-
 
 hi!      TSStrong guifg=none guibg=none gui=bold
 hi!      TSEmphasis guifg=none guibg=none gui=italic

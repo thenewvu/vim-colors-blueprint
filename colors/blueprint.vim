@@ -61,8 +61,8 @@ hi          Folded guifg=none    guibg=none    gui=none
 " -------------------------
 hi       VertSplit guifg=#2c4e6c guibg=none    gui=none
 hi     ColorColumn guifg=none    guibg=#2c4e6c gui=none
-hi         TabLine guifg=#74a0c7 guibg=#2c4e6c gui=none
-hi     TabLineFill guifg=#74a0c7 guibg=#2c4e6c gui=none
+hi         TabLine guifg=#74a0c7 guibg=none    gui=none
+hi     TabLineFill guifg=#74a0c7 guibg=none    gui=none
 hi      TabLineSel guifg=none    guibg=#2c4e6c gui=none
 hi     FloatBorder guifg=#74a0c7 guibg=#2c4e6c gui=none
 

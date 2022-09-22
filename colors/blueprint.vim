@@ -44,14 +44,14 @@ hi          Normal guifg=#ffffff guibg=#335b7e gui=none
 hi          Cursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi         vCursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi         iCursor guifg=#2c4e6c guibg=#abede0 gui=none
-hi      CursorLine guifg=none    guibg=#2c4e6c gui=none
+hi      CursorLine guifg=none    guibg=#305575 gui=none
 hi          LineNr guifg=#74a0c7 guibg=none    gui=none
 hi    CursorLineNR guifg=none    guibg=none    gui=none
 
 " -----------------
 " - Number column -
 " -----------------
-hi    CursorColumn guifg=none    guibg=#2c4e6c gui=none
+hi    CursorColumn guifg=none    guibg=#305575 gui=none
 hi      FoldColumn guifg=#74a0c7 guibg=none    gui=none
 hi      SignColumn guifg=#74a0c7 guibg=none    gui=none
 hi          Folded guifg=none    guibg=none    gui=none
@@ -60,7 +60,7 @@ hi          Folded guifg=none    guibg=none    gui=none
 " - Window/Tab delimiters - 
 " -------------------------
 hi       VertSplit guifg=#2c4e6c guibg=none    gui=none
-hi     ColorColumn guifg=none    guibg=#2c4e6c gui=none
+hi     ColorColumn guifg=none    guibg=#305575 gui=none
 hi         TabLine guifg=#74a0c7 guibg=none    gui=none
 hi     TabLineFill guifg=#74a0c7 guibg=none    gui=none
 hi      TabLineSel guifg=none    guibg=#2c4e6c gui=none
@@ -76,8 +76,8 @@ hi       IncSearch guifg=#2c4e6c guibg=#ffffff gui=none
 " -----------------
 " - Prompt/Status -
 " -----------------
-hi      StatusLine guifg=#74a0c7 guibg=#2c4e6c gui=none
-hi    StatusLineNC guifg=#74a0c7 guibg=#2c4e6c gui=none
+hi      StatusLine guifg=#74a0c7 guibg=#305575 gui=none
+hi    StatusLineNC guifg=#74a0c7 guibg=#305575 gui=none
 hi          WinBar guifg=#74a0c7 guibg=#2c4e6c gui=none
 hi        WinBarNC guifg=#74a0c7 guibg=#2c4e6c gui=none
 hi        WildMenu guifg=#74a0c7 guibg=#2c4e6c gui=none

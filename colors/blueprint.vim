@@ -65,6 +65,7 @@ hi         TabLine guifg=#74a0c7 guibg=none    gui=none
 hi     TabLineFill guifg=#74a0c7 guibg=none    gui=none
 hi      TabLineSel guifg=none    guibg=#2c4e6c gui=none
 hi     FloatBorder guifg=#74a0c7 guibg=#2c4e6c gui=none
+hi     NormalFloat guifg=#ffffff guibg=#335b7e gui=none
 
 " -------------------------------
 " - File Navigation / Searching -
@@ -340,3 +341,28 @@ hi! link TSTypeBuiltin Type
 hi! link TSURI String
 hi! link TSVariable Identifier
 hi! link TSVariableBuiltin Identifier
+
+hi! NotifyERRORIcon guifg=#a05454
+hi! NotifyERRORTitle  guifg=#a05454
+hi! NotifyERRORBorder guifg=#a05454 guibg=#a05454
+hi! NotifyERRORBody guifg=#a05454 guibg=#a05454
+
+hi! NotifyWARNIcon guifg=#ede0ab
+hi! NotifyWARNTitle  guifg=#ede0ab
+hi! NotifyWARNBorder guifg=#ede0ab guibg=#7f7f43
+hi! NotifyWARNBody guifg=#ede0ab guibg=#7f7f43
+
+hi! NotifyINFOIcon guifg=#b8edab
+hi! NotifyINFOTitle  guifg=#b8edab
+hi! NotifyINFOBorder guifg=#b8edab guibg=#437f43
+hi! NotifyINFOBody guifg=#b8edab guibg=#437f43
+
+hi! NotifyDEBUGIcon guifg=#b8edab
+hi! NotifyDEBUGTitle  guifg=#b8edab
+hi! NotifyDEBUGBorder guifg=#b8edab guibg=#437f43
+hi! NotifyDEBUGBody guifg=#b8edab guibg=#437f43
+
+hi! NotifyTRACEIcon guifg=#b8edab
+hi! NotifyTRACETitle  guifg=#b8edab
+hi! NotifyTRACEBorder guifg=#b8edab guibg=#437f43
+hi! NotifyTRACEBody guifg=#b8edab guibg=#437f43

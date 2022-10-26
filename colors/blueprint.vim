@@ -65,7 +65,7 @@ hi         TabLine guifg=#74a0c7 guibg=none    gui=none
 hi     TabLineFill guifg=#74a0c7 guibg=none    gui=none
 hi      TabLineSel guifg=none    guibg=#2c4e6c gui=none
 hi     FloatBorder guifg=#74a0c7 guibg=#2c4e6c gui=none
-hi     NormalFloat guifg=#ffffff guibg=#335b7e gui=none
+hi     NormalFloat guifg=#ffffff guibg=#2c4e6c gui=none
 
 " -------------------------------
 " - File Navigation / Searching -
@@ -366,3 +366,9 @@ hi! NotifyTRACEIcon guifg=#b8edab
 hi! NotifyTRACETitle  guifg=#b8edab
 hi! NotifyTRACEBorder guifg=#b8edab guibg=#437f43
 hi! NotifyTRACEBody guifg=#b8edab guibg=#437f43
+
+hi! link TelescopeNormal NormalFloat
+hi! link TelescopeBorder FloatBorder
+hi! link TelescopePreviewNormal NormalFloat
+hi! link TelescopeResultsNormal NormalFloat
+

@@ -96,11 +96,11 @@ hi      MatchParen guifg=none    guibg=none    gui=underline
 hi          Visual guifg=#2c4e6c guibg=#ffffff gui=none
 hi       VisualNOS guifg=#2c4e6c guibg=#ffffff gui=none
 hi         NonText guifg=#2c4e6c guibg=none    gui=none
-hi            Todo guifg=none    guibg=#7f7f43 gui=none
+hi            Todo guifg=#ede0ab guibg=#7f7f43 gui=none
 hi      Underlined guifg=none    guibg=none    gui=underline
-hi           Error guifg=none    guibg=#a05454 gui=none
-hi        ErrorMsg guifg=none    guibg=#a05454 gui=none
-hi      WarningMsg guifg=none    guibg=#7f7f43 gui=none
+hi           Error guifg=#edabb8 guibg=#a05454 gui=none
+hi        ErrorMsg guifg=#edabb8 guibg=#a05454 gui=none
+hi      WarningMsg guifg=#ede0ab guibg=#7f7f43 gui=none
 hi          Ignore guifg=#335b7e guibg=none    gui=none
 hi         Conceal guifg=#abede0 guibg=none    gui=none
 hi      SpecialKey guifg=#abede0 guibg=none    gui=none
@@ -175,10 +175,10 @@ hi      PmenuThumb guifg=none    guibg=#2c4e6c gui=none
 " --------------------------------
 " Spelling
 " --------------------------------
-hi        SpellBad guifg=none    guibg=#7f7f43 gui=underline
-hi        SpellCap guifg=none    guibg=#7f7f43 gui=underline
-hi      SpellLocal guifg=none    guibg=#7f7f43 gui=underline
-hi       SpellRare guifg=none    guibg=#7f7f43 gui=underline
+hi        SpellBad guifg=#ede0ab guibg=#7f7f43 gui=underline
+hi        SpellCap guifg=#ede0ab guibg=#7f7f43 gui=underline
+hi      SpellLocal guifg=#ede0ab guibg=#7f7f43 gui=underline
+hi       SpellRare guifg=#ede0ab guibg=#7f7f43 gui=underline
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |
@@ -342,10 +342,10 @@ hi! link TSURI String
 hi! link TSVariable Identifier
 hi! link TSVariableBuiltin Identifier
 
-hi! NotifyERRORIcon guifg=#a05454
-hi! NotifyERRORTitle  guifg=#a05454
-hi! NotifyERRORBorder guifg=#a05454 guibg=#a05454
-hi! NotifyERRORBody guifg=#a05454 guibg=#a05454
+hi! NotifyERRORIcon guifg=#edabb8
+hi! NotifyERRORTitle  guifg=#edabb8
+hi! NotifyERRORBorder guifg=#edabb8 guibg=#a05454
+hi! NotifyERRORBody guifg=#edabb8 guibg=#a05454
 
 hi! NotifyWARNIcon guifg=#ede0ab
 hi! NotifyWARNTitle  guifg=#ede0ab

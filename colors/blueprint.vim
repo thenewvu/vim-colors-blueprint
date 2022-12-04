@@ -325,7 +325,7 @@ hi! link @function.macro    Define " preprocessor macros
 hi! link @method            Define      " method definitions
 hi! link @method.call       Function      " method calls
 
-hi! link @constructor       Function      " constructor calls and definitions
+hi! link @constructor       Normal      " constructor calls and definitions
 hi! link @parameter         Identifier        " parameters of a function
 
 " Keywords

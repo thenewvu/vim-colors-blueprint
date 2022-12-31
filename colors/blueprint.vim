@@ -95,7 +95,7 @@ hi         MsgArea guifg=#ede0ab guibg=none    gui=none
 hi      MatchParen guifg=none    guibg=none    gui=underline
 hi          Visual guifg=#2c4e6c guibg=#ffffff gui=none
 hi       VisualNOS guifg=#2c4e6c guibg=#ffffff gui=none
-hi         NonText guifg=none    guibg=none    gui=none
+hi         NonText guifg=#2c4e6c guibg=none    gui=none
 hi            Todo guifg=#ede0ab guibg=#7f7f43 gui=none
 hi      Underlined guifg=none    guibg=none    gui=underline
 hi           Error guifg=#edabb8 guibg=#a05454 gui=none

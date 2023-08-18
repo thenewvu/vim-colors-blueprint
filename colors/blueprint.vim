@@ -149,7 +149,7 @@ hi          Define guifg=#b8edab guibg=none    gui=none
 hi           Macro guifg=#b8edab guibg=none    gui=none
 hi       PreCondit guifg=#b8edab guibg=none    gui=none
 
-hi            Type guifg=#80a8cb guibg=none    gui=none
+hi            Type guifg=none    guibg=none    gui=none
 hi    StorageClass guifg=#80a8cb guibg=none    gui=none
 hi       Structure guifg=#abede0 guibg=none    gui=none
 hi         Typedef guifg=#abede0 guibg=none    gui=none
@@ -167,10 +167,10 @@ hi        DiffFile guifg=none    guibg=none    gui=underline
 " --------------------------------
 " Completion menu
 " --------------------------------
-hi           Pmenu guifg=none    guibg=#2c4e6c gui=none
-hi        PmenuSel guifg=none    guibg=none    gui=standout
-hi       PmenuSbar guifg=none    guibg=none    gui=standout
-hi      PmenuThumb guifg=none    guibg=#2c4e6c gui=none
+hi           Pmenu guifg=#abede0    guibg=#2c4e6c gui=none
+hi        PmenuSel guifg=#abede0    guibg=none    gui=standout
+hi       PmenuSbar guifg=#abede0    guibg=none    gui=standout
+hi      PmenuThumb guifg=#abede0    guibg=#abede0 gui=none
 
 " --------------------------------
 " Spelling
@@ -277,14 +277,6 @@ let g:terminal_color_14 = "#abede0"
 " light4 + light1
 let g:terminal_color_7 = "#ffffff"
 let g:terminal_color_15 = "#ffffff"
-
-hi IndentBlanklineIndent1     guifg=#6a8955 gui=nocombine
-hi IndentBlanklineIndent2     guifg=#3c7f88 gui=nocombine
-hi IndentBlanklineIndent3     guifg=#447aa7 gui=nocombine
-hi IndentBlanklineIndent4     guifg=#a08656 gui=nocombine
-hi IndentBlanklineIndent5     guifg=#8b549b gui=nocombine
-hi IndentBlanklineIndent6     guifg=#9d4c52 gui=nocombine
-hi IndentBlanklineContextChar guifg=#abede0 gui=nocombine
 
 " Misc
 
@@ -457,3 +449,6 @@ hi! link TelescopeBorder FloatBorder
 hi! link TelescopePreviewNormal NormalFloat
 hi! link TelescopeResultsNormal NormalFloat
 
+hi! link TreesitterContextLineNumber CursorLine
+hi! link TreesitterContext CursorLine
+hi! link TreesitterContextBottom CursorLine

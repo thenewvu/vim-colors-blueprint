@@ -54,12 +54,13 @@ hi    CursorLineNR guifg=none    guibg=none    gui=none
 hi    CursorColumn guifg=none    guibg=#305575 gui=none
 hi      FoldColumn guifg=#80a8cb guibg=none    gui=none
 hi      SignColumn guifg=#80a8cb guibg=none    gui=none
-hi          Folded guifg=none    guibg=none    gui=none
+hi          Folded guifg=#2c4e6c guibg=none    gui=none
 
 " -------------------------
 " - Window/Tab delimiters - 
 " -------------------------
 hi       VertSplit guifg=#2c4e6c guibg=none    gui=none
+hi    WinSeparator guifg=#2c4e6c guibg=none    gui=none
 hi     ColorColumn guifg=none    guibg=#305575 gui=none
 hi         TabLine guifg=#80a8cb guibg=none    gui=none
 hi     TabLineFill guifg=#80a8cb guibg=none    gui=none
@@ -70,9 +71,9 @@ hi     NormalFloat guifg=#ffffff guibg=#2c4e6c gui=none
 " -------------------------------
 " - File Navigation / Searching -
 " -------------------------------
-hi       Directory guifg=none    guibg=none    gui=underline
-hi          Search guifg=#2c4e6c guibg=#ffffff gui=none
-hi       IncSearch guifg=#2c4e6c guibg=#ffffff gui=none
+hi       Directory guifg=#ffffff guibg=none    gui=underline
+hi          Search guifg=#2c4e6c    guibg=#ffffff gui=none
+hi       IncSearch guifg=#2c4e6c    guibg=#ffffff gui=none
 
 " -----------------
 " - Prompt/Status -
@@ -108,16 +109,16 @@ hi      SpecialKey guifg=#abede0 guibg=none    gui=none
 " --------------------------------
 " Variable types
 " --------------------------------
-hi        Constant guifg=none    guibg=none    gui=none
-hi          String guifg=none    guibg=none    gui=none
-hi StringDelimiter guifg=#80a8cb guibg=none    gui=none
-hi       Character guifg=none    guibg=none    gui=none
-hi          Number guifg=none    guibg=none    gui=none
-hi         Boolean guifg=none    guibg=none    gui=none
-hi           Float guifg=none    guibg=none    gui=none
+hi        Constant guifg=#ffffff guibg=none gui=none
+hi          String guifg=#ffffff guibg=none gui=none
+hi StringDelimiter guifg=#80a8cb guibg=none gui=none
+hi       Character guifg=#ffffff guibg=none gui=none
+hi          Number guifg=#ffffff guibg=none gui=none
+hi         Boolean guifg=#ffffff guibg=none gui=none
+hi           Float guifg=#ffffff guibg=none gui=none
 
-hi      Identifier guifg=none    guibg=none    gui=none
-hi        Function guifg=#abede0 guibg=none    gui=none
+hi      Identifier guifg=#ffffff guibg=none gui=none
+hi        Function guifg=#abede0 guibg=none gui=none
 
 " --------------------------------
 " Language constructs
@@ -149,7 +150,7 @@ hi          Define guifg=#b8edab guibg=none    gui=none
 hi           Macro guifg=#b8edab guibg=none    gui=none
 hi       PreCondit guifg=#b8edab guibg=none    gui=none
 
-hi            Type guifg=none    guibg=none    gui=none
+hi            Type guifg=#ffffff guibg=none    gui=none
 hi    StorageClass guifg=#80a8cb guibg=none    gui=none
 hi       Structure guifg=#abede0 guibg=none    gui=none
 hi         Typedef guifg=#abede0 guibg=none    gui=none
@@ -220,10 +221,10 @@ hi! GitGutterAdd     guifg=#437f43 guibg=#437f43
 hi! GitGutterChange  guifg=#7f7f43 guibg=#7f7f43 
 hi! GitGutterDelete  guifg=#a05454 guibg=#a05454 
 
-hi! link       LspDiagnosticsVirtualTextError ErrorMsg
-hi! link     LspDiagnosticsVirtualTextWarning WarningMsg
-hi! link LspDiagnosticsVirtualTextInformation WarningMsg
-hi! link        LspDiagnosticsVirtualTextHint WarningMsg
+hi       LspDiagnosticsVirtualTextError guifg=#edabb8 guibg=#305575 gui=italic
+hi     LspDiagnosticsVirtualTextWarning guifg=#ede0ab guibg=#305575 gui=italic
+hi LspDiagnosticsVirtualTextInformation guifg=#80a8cb guibg=#305575 gui=italic
+hi        LspDiagnosticsVirtualTextHint guifg=#80a8cb guibg=#305575 gui=italic
 
 hi! link DiagnosticError      LspDiagnosticsVirtualTextError
 hi! link DiagnosticWarn     LspDiagnosticsVirtualTextWarning
@@ -233,15 +234,12 @@ hi! link DiagnosticHint        LspDiagnosticsVirtualTextHint
 hi! link LspDiagnosticsUnderlineError        ErrorMsg
 hi! link LspDiagnosticsUnderlineWarning      WarningMsg
 hi! link LspDiagnosticsUnderlineInformation  WarningMsg
-hi! link LspDiagnosticsUnderlineHint         WarningMsg
+" hi! link LspDiagnosticsUnderlineHint         Normal
 
 hi! link DiagnosticUnderlineError       LspDiagnosticsUnderlineError
 hi! link DiagnosticUnderlineWarn      LspDiagnosticsUnderlineWarning
 hi! link DiagnosticUnderlineInfo  LspDiagnosticsUnderlineInformation
 hi! link DiagnosticUnderlineHint         LspDiagnosticsUnderlineHint
-
-" for lukas-reineke/indent-blankline.nvim
-hi! link IndentBlanklineChar VertSplit
 
 let g:terminal_color_background = "#335b7e"
 let g:terminal_color_foreground = "#ffffff"
@@ -278,146 +276,149 @@ let g:terminal_color_14 = "#abede0"
 let g:terminal_color_7 = "#ffffff"
 let g:terminal_color_15 = "#ffffff"
 
-" Misc
+" Link nvim-treesitter matchers
+hi! link @variable                    Identifier " various variable names
+hi! link @variable.builtin            Identifier " built-in variable names (e.g. `this`)
+hi! link @variable.parameter          Identifier " parameters of a function
+hi! link @variable.member             Identifier " object and struct fields
 
-hi! link @comment   Comment  " line and block comments
-" hi! link @error     Normal    " syntax/parser errors
-hi! link @none      Normal     " completely disable the highlight
-hi! link @preproc   PreProc  " various preprocessor directives & shebangs
-hi! link @define    Define   " preprocessor definition directives
-hi! link @operator  Operator " symbolic operators (e.g. `+` / `*`)
+hi! link @constant                    Constant " constant identifiers
+hi! link @constant.builtin            Constant " built-in constant values
+hi! link @constant.macro              Constant " constants defined by the preprocessor
 
-" Punctuation
+hi! link @module                      Label " modules or namespaces
+hi! link @module.builtin              Label " built-in modules or namespaces
+hi! link @label                       Label " GOTO and other labels (e.g. `label:` in C), including heredoc labels
 
-hi! link @punctuation.delimiter  Delimiter " delimiters (e.g. `;` / `.` / `,`)
-hi! link @punctuation.bracket    Delimiter   " brackets (e.g. `()` / `{}` / `[]`)
-hi! link @punctuation.special    Delimiter   " special symbols (e.g. `{}` in string interpolation)
+hi! link @string                      String " string literals
+hi! link @string.documentation        String " string documenting code (e.g. Python docstrings)
+hi! link @string.regexp               String " regular expressions
+hi! link @string.escape               String " escape sequences
+hi! link @string.special              String " other special strings (e.g. dates)
+hi! link @string.special.symbol       String " symbols or atoms
+hi! link @string.special.path         String " filenames
+hi! link @string.special.url          String " URIs (e.g. hyperlinks)
 
-" Literals
+hi! link @character                   Character " character literals
+hi! link @character.special           Character " special characters (e.g. wildcards)
 
-hi! link @string             String    " string literals
-hi! link @string.regex       String    " regular expressions
-hi! link @string.escape      String    " escape sequences
-hi! link @string.special     String    " other special strings (e.g. dates)
+hi! link @boolean                     Number " boolean literals
+hi! link @number                      Number " numeric literals
+hi! link @number.float                Number " floating-point number literals
 
-hi! link @character          Character " character literals
-hi! link @character.special  Character " special characters (e.g. wildcards)
+hi! link @type                        Type " type or class definitions and annotations
+hi! link @type.builtin                Type " built-in types
+hi! link @type.definition             Type " identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
+hi! link @type.qualifier              Type " type qualifiers (e.g. `const`)
 
-hi! link @boolean            Boolean           " boolean literals
-hi! link @number             Number            " numeric literals
-hi! link @float              Float             " floating-point number literals
+hi! link @attribute                   Identifier " attribute annotations (e.g. Python decorators)
+hi! link @property                    Identifier " the key in key/value pairs
 
-" Functions
+hi! link @function                    Function " function definitions
+hi! link @function.builtin            Function " built-in functions
+hi! link @function.call               Function " function calls
+hi! link @function.macro              Function " preprocessor macros
 
-hi! link @function          Define " function definitions
-hi! link @function.builtin  Function " built-in functions
-hi! link @function.call     Function " function calls
-hi! link @function.macro    Define " preprocessor macros
+hi! link @function.method             Function " method definitions
+hi! link @function.method.call        Function " method calls
 
-hi! link @method            Define      " method definitions
-hi! link @method.call       Function      " method calls
+hi! link @constructor                 Constructor " constructor calls and definitions
+hi! link @operator                    Operator " symbolic operators (e.g. `+` / `*`)
 
-hi! link @constructor       Normal      " constructor calls and definitions
-hi! link @parameter         Identifier        " parameters of a function
+hi! link @keyword                     Keyword " keywords not fitting into specific categories
+hi! link @keyword.coroutine           Keyword " keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
+hi! link @keyword.function            Keyword " keywords that define a function (e.g. `func` in Go, `def` in Python)
+hi! link @keyword.operator            Keyword " operators that are English words (e.g. `and` / `or`)
+hi! link @keyword.import              Keyword " keywords for including modules (e.g. `import` / `from` in Python)
+hi! link @keyword.storage             Keyword " modifiers that affect storage in memory or life-time
+hi! link @keyword.repeat              Keyword " keywords related to loops (e.g. `for` / `while`)
+hi! link @repeat                      Keyword " keywords related to loops (e.g. `for` / `while`)
+hi! link @keyword.return              Keyword " keywords like `return` and `yield`
+hi! link @keyword.debug               Keyword " keywords related to debugging
+hi! link @keyword.exception           Keyword " keywords related to exceptions (e.g. `throw` / `catch`)
 
-" Keywords
+hi! link @keyword.conditional         Keyword " keywords related to conditionals (e.g. `if` / `else`)
+hi! link @keyword.conditional.ternary Keyword " ternary operator (e.g. `?` / `:`)
+hi! link @conditional @keyword.conditional
 
-hi! link @keyword           Keyword " various keywords
-hi! link @keyword.function  Keyword " keywords that define a function (e.g. `func` in Go, `def` in Python)
-hi! link @keyword.operator  Operator " operators that are English words (e.g. `and` / `or`)
-hi! link @keyword.return    Keyword " keywords like `return` and `yield`
+hi! link @keyword.directive           Keyword " various preprocessor directives and shebangs
+hi! link @keyword.directive.define    Keyword " preprocessor definition directives
 
-hi! link @conditional       Conditional " keywords related to conditionals (e.g. `if` / `else`)
-hi! link @repeat            Repeat " keywords related to loops (e.g. `for` / `while`)
-hi! link @debug             Debug " keywords related to debugging
-hi! link @label             Label " GOTO and other labels (e.g. `label:` in C)
-hi! link @include           Include " keywords for including modules (e.g. `import` / `from` in Python)
-hi! link @exception         Exception " keywords related to exceptions (e.g. `throw` / `catch`)
+hi! link @punctuation.delimiter       Delimiter " delimiters (e.g. `;` / `.` / `,`)
+hi! link @punctuation.bracket         Delimiter " brackets (e.g. `()` / `{}` / `[]`)
+hi! link @punctuation.special         Delimiter " special symbols (e.g. `{}` in string interpolation)
 
-" Types
+hi! link @comment                     Comment " line and block comments
+hi! link @comment.documentation       Comment " comments documenting code
 
-hi! link @type                   Type       " type or class definitions and annotations
-hi! link @type.builtin           Type       " built-in types
-hi! link @type.definition        Type       " type definitions (e.g. `typedef` in C)
-hi! link @type.qualifier         StorageClass       " type qualifiers (e.g. `const`)
+hi! link @comment.error               Comment " error-type comments (e.g. `ERROR`, `FIXME`, `DEPRECATED:`)
+hi! link @comment.warning             Comment " warning-type comments (e.g. `WARNING:`, `FIX:`, `HACK:`)
+hi! link @comment.todo                Comment " todo-type comments (e.g. `TODO:`, `WIP:`, `FIXME:`)
+hi! link @comment.note                Comment " note-type comments (e.g. `NOTE:`, `INFO:`, `XXX`)
 
-hi! link @storageclass           StorageClass          " visibility/life-time modifiers
-hi! link @attribute              StorageClass             " attribute annotations (e.g. Python decorators)
-hi! link @field                  Identifier                 " object and struct fields
-hi! link @property               Identifier              " similar to `@field`
+hi! @markup.strong               gui=bold " bold text
+hi! @markup.italic               gui=italic " italic text
+hi! @markup.strikethrough        gui=strikethrough " struck-through text
+hi! @markup.underline            gui=underline " underlined text (only for literal underline markup!)
 
-" Identifiers
+hi! link @markup.heading            Title  " headings, titles (including markers)
 
-hi! link @variable           Identifier " various variable names
-hi! link @variable.builtin   Identifier " built-in variable names (e.g. `this`)
+hi! link @markup.quote               Special " block quotes
+hi! link @markup.math                Special " math environments (e.g. `$ ... $` in LaTeX)
+hi! link @markup.environment         Special " environments (e.g. in LaTeX)
 
-hi! link @constant           Constant  " constant identifiers
-hi! link @constant.builtin   Constant  " built-in constant values
-hi! link @constant.macro     Define  " constants defined by the preprocessor
+hi! link @markup.link                Special " text references, footnotes, citations, etc.
+hi! link @markup.link.label          Special " link, reference descriptions
+hi! link @markup.link.url            Special " URL-style links
 
-hi! link @namespace         Define        " modules or namespaces
-hi! link @symbol            Define        " symbols or atoms
+hi! link @markup.raw                  Special" literal or verbatim text (e.g. inline code)
+hi! link @markup.raw.block            Special" literal or verbatim text as a stand-alone block
 
-" Text
-" Mainly for markup languages.
+hi! link @markup.list                 Special" list markers
+hi! link @markup.list.checked         Special" checked todo-style list markers
+hi! link @markup.list.unchecked       Special" unchecked todo-style list markers
 
-hi! link @text                   Normal         " non-structured text
-hi! link @text.strong            Special         " bold text
-hi! link @text.emphasis          Special         " text with emphasis
-hi! link @text.underline         Underlined        " underlined text
-hi! link @text.strike            Comment " strikethrough text
-hi! link @text.title             Title " text that is part of a title
-hi! link @text.literal           Special " literal or verbatim text
-hi! link @text.uri               Special " URIs (e.g. hyperlinks)
-hi! link @text.math              Special " math environments (e.g. `$ ... $` in LaTeX)
-hi! link @text.environment       Special " text environments of markup languages
-hi! link @text.environment.name  Special " text indicating the type of an environment
-hi! link @text.reference         Special " text references, footnotes, citations, etc.
+hi! link @diff.plus                   DiffAdd" added text (for diff files)
+hi! link @diff.minus                  DiffDelete" deleted text (for diff files)
+hi! link @diff.delta                  DiffChange " changed text (for diff files)
 
-hi! link @text.todo              Todo             " todo notes
-hi! link @text.note              Todo             " info notes
-hi! link @text.warning           WarningMsg          " warning notes
-hi! link @text.danger            ErrorMsg           " danger/error notes
+hi! link @tag                         Special " XML-style tag names (e.g. in XML, HTML, etc.)
+hi! link @tag.attribute               Special " XML-style tag attributes
+hi! link @tag.delimiter               Special " XML-style tag delimiters
 
-hi! link @text.diff.add          DiffAdd         " added text (for diff files)
-hi! link @text.diff.delete       DiffDelete      " deleted text (for diff files)
+hi! link @include Include
 
-" Tags
-" Used for XML-like tags.
-
-hi! link @tag            Tag " XML tag names
-hi! link @tag.attribute  Identifier " XML tag attributes
-hi! link @tag.delimiter  Delimiter " XML tag delimiters
-
-" Conceal
-
-hi! link @conceal  Conceal " for captures that are only used for concealing
-" @conceal must be followed by (#set! conceal "").
-
-" Spell
-
-" hi! link @spell    Normal   " for defining regions to be spellchecked
-" hi! link @nospell  Normal " for defining regions that should NOT be spellchecked
-
-" Locals
-
-hi! link @definition             Define " various definitions
-hi! link @definition.constant    Define " constants
-hi! link @definition.function    Define " functions
-hi! link @definition.method      Define " methods
-hi! link @definition.var         Define " variables
-hi! link @definition.parameter   Define " parameters
-hi! link @definition.macro       Define " preprocessor macros
-hi! link @definition.type        Define " types or classes
-hi! link @definition.field       Define " fields or properties
-hi! link @definition.enum        Define " enumerations
-hi! link @definition.namespace   Define " modules or namespaces
-hi! link @definition.import      Define " imported names
-hi! link @definition.associated  Define " the associated type of a variable
-
-hi! link @scope                  Define             " scope block
-hi! link @reference              Define             " identifier reference
-
+" Link LSP Semantic Highlighting to treesitter styles
+hi! link @lsp.type.boolean                      @boolean
+hi! link @lsp.type.builtinType                  @type.builtin
+hi! link @lsp.type.comment                      @comment
+hi! link @lsp.type.enum                         @type
+hi! link @lsp.type.enumMember                   @constant
+hi! link @lsp.type.escapeSequence               @string.escape
+hi! link @lsp.type.formatSpecifier              @punctuation.special
+hi! link @lsp.type.interface                    @type
+hi! link @lsp.type.keyword                      @keyword
+hi! link @lsp.type.namespace                    @namespace
+hi! link @lsp.type.number                       @number
+hi! link @lsp.type.operator                     @operator
+hi! link @lsp.type.parameter                    @variable.parameter
+hi! link @lsp.type.property                     @property
+hi! link @lsp.type.selfKeyword                  @variable.builtin
+hi! link @lsp.type.typeAlias                    @type.definition
+hi! link @lsp.type.unresolvedReference          @error
+hi! link @lsp.type.variable                     @variable
+hi! link @lsp.typemod.class.defaultLibrary      @type.builtin
+hi! link @lsp.typemod.enum.defaultLibrary       @type.builtin
+hi! link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
+hi! link @lsp.typemod.function.defaultLibrary   @function.builtin
+hi! link @lsp.typemod.keyword.async             @keyword.coroutine
+hi! link @lsp.typemod.macro.defaultLibrary      @function.builtin
+hi! link @lsp.typemod.method.defaultLibrary     @function.builtin
+hi! link @lsp.typemod.operator.injected         @operator
+hi! link @lsp.typemod.string.injected           @string
+hi! link @lsp.typemod.type.defaultLibrary       @type.builtin
+hi! link @lsp.typemod.variable.defaultLibrary   @variable.builtin
+hi! link @lsp.typemod.variable.injected         @variable
 
 hi! NotifyERRORIcon guifg=#edabb8
 hi! NotifyERRORTitle  guifg=#edabb8
@@ -448,7 +449,19 @@ hi! link TelescopeNormal NormalFloat
 hi! link TelescopeBorder FloatBorder
 hi! link TelescopePreviewNormal NormalFloat
 hi! link TelescopeResultsNormal NormalFloat
+hi TelescopeSelection gui=standout
+hi TelescopeMultiSelection gui=standout
 
 hi! link TreesitterContextLineNumber CursorLine
 hi! link TreesitterContext CursorLine
 hi! link TreesitterContextBottom CursorLine
+
+hi GitSignsAddLn          guifg=none guibg=#2E6A73 gui=none
+hi GitSignsChangeLn       guifg=none guibg=#446782 gui=none
+hi GitSignsChangedeleteLn guifg=none guibg=#446782 gui=none
+hi GitSignsAddLnInline    guifg=none guibg=#b8edab gui=none
+hi GitSignsChangeLnInline guifg=none guibg=#ede0ab gui=none
+hi GitSignsDeleteLnInline guifg=none guibg=#ede0ab gui=none
+hi GitSignsAddInline      guifg=none guibg=#b8edab gui=none
+hi GitSignsChangeInline   guifg=none guibg=#ede0ab gui=none
+hi GitSignsDeleteInline   guifg=none guibg=#ede0ab gui=none

@@ -45,8 +45,8 @@ hi          Cursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi         vCursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi         iCursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi      CursorLine guifg=none    guibg=#305575 gui=none
-hi          LineNr guifg=#80a8cb guibg=none    gui=none
-hi    CursorLineNR guifg=none    guibg=none    gui=none
+hi          LineNr guifg=#80a8cb guibg=#305575 gui=none
+hi    CursorLineNR guifg=#ffffff guibg=#305575 gui=none
 
 " -----------------
 " - Number column -
@@ -54,7 +54,7 @@ hi    CursorLineNR guifg=none    guibg=none    gui=none
 hi    CursorColumn guifg=none    guibg=#305575 gui=none
 hi      FoldColumn guifg=#80a8cb guibg=none    gui=none
 hi      SignColumn guifg=#80a8cb guibg=none    gui=none
-hi          Folded guifg=#2c4e6c guibg=none    gui=none
+hi          Folded guifg=#ffffff guibg=#305575 gui=none
 
 " -------------------------
 " - Window/Tab delimiters - 
@@ -72,8 +72,8 @@ hi     NormalFloat guifg=#ffffff guibg=#2c4e6c gui=none
 " - File Navigation / Searching -
 " -------------------------------
 hi       Directory guifg=#ffffff guibg=none    gui=underline
-hi          Search guifg=#2c4e6c    guibg=#ffffff gui=none
-hi       IncSearch guifg=#2c4e6c    guibg=#ffffff gui=none
+hi    Search guifg=#2c4e6c guibg=#ffffff gui=none
+hi IncSearch guifg=#2c4e6c guibg=#ffffff gui=none
 
 " -----------------
 " - Prompt/Status -
@@ -83,11 +83,11 @@ hi    StatusLineNC guifg=#80a8cb guibg=#305575 gui=none
 hi          WinBar guifg=#80a8cb guibg=#2c4e6c gui=none
 hi        WinBarNC guifg=#80a8cb guibg=#2c4e6c gui=none
 hi        WildMenu guifg=#80a8cb guibg=#2c4e6c gui=none
-hi        Question guifg=#ede0ab guibg=none    gui=none
-hi           Title guifg=#b8edab guibg=none    gui=none
-hi         ModeMsg guifg=#ede0ab guibg=none    gui=none
-hi         MoreMsg guifg=#ede0ab guibg=none    gui=none
-hi         MsgArea guifg=#ede0ab guibg=none    gui=none
+hi        Question guifg=#ede0ab guibg=#2c4e6c gui=none
+hi           Title guifg=#b8edab guibg=#2c4e6c gui=none
+hi         ModeMsg guifg=#ede0ab guibg=#2c4e6c gui=none
+hi         MoreMsg guifg=#ede0ab guibg=#2c4e6c gui=none
+hi         MsgArea guifg=#ede0ab guibg=#2c4e6c gui=none
 
 
 " --------------
@@ -158,11 +158,11 @@ hi         Typedef guifg=#abede0 guibg=none    gui=none
 " --------------------------------
 " Diff
 " --------------------------------
-hi         DiffAdd guifg=#b8edab guibg=#2c4e6c gui=none
-hi      DiffChange guifg=#ede0ab guibg=#2c4e6c gui=none
-hi      DiffDelete guifg=#edabb8 guibg=#2c4e6c gui=none
-hi        DiffText guifg=#ede0ab guibg=#7f7f43 gui=none
-hi        DiffFile guifg=none    guibg=none    gui=underline
+hi         DiffAdd guifg=#b8edab guibg=#305575 gui=none
+hi      DiffChange guifg=#ede0ab guibg=#305575 gui=none
+hi      DiffDelete guifg=#edabb8 guibg=#305575 gui=none
+hi        DiffText guifg=#ede0ab guibg=#305575 gui=standout
+hi        DiffFile guifg=#ede0ab guibg=#2c4e6c gui=none
 
 
 " --------------------------------
@@ -456,12 +456,35 @@ hi! link TreesitterContextLineNumber CursorLine
 hi! link TreesitterContext CursorLine
 hi! link TreesitterContextBottom CursorLine
 
-hi GitSignsAddLn          guifg=none guibg=#2E6A73 gui=none
-hi GitSignsChangeLn       guifg=none guibg=#446782 gui=none
-hi GitSignsChangedeleteLn guifg=none guibg=#446782 gui=none
-hi GitSignsAddLnInline    guifg=none guibg=#b8edab gui=none
-hi GitSignsChangeLnInline guifg=none guibg=#ede0ab gui=none
-hi GitSignsDeleteLnInline guifg=none guibg=#ede0ab gui=none
-hi GitSignsAddInline      guifg=none guibg=#b8edab gui=none
-hi GitSignsChangeInline   guifg=none guibg=#ede0ab gui=none
-hi GitSignsDeleteInline   guifg=none guibg=#ede0ab gui=none
+hi GitSignsAddLn          guifg=#2E6A73 guibg=#2E6A73 gui=none
+hi GitSignsChangeLn       guifg=#446782 guibg=#446782 gui=none
+hi GitSignsChangedeleteLn guifg=#446782 guibg=#446782 gui=none
+
+hi! link    NeogitDiffContext           Noise 
+hi! link    NeogitDiffContextHighlight  Noise  
+hi! link    NeogitDiffContextCursor     Noise  
+
+hi! link NeogitHunkHeader  DiffFile
+hi! link NeogitDiffContext Noise
+hi! link NeogitDiffAdd     DiffAdd
+hi! link NeogitDiffDelete  DiffDelete
+hi! link NeogitDiffHeader  DiffFile
+hi! link NeogitHunkHeaderHighlight  DiffFile
+hi! link NeogitDiffContextHighlight Noise
+hi! link NeogitDiffAddHighlight     DiffAdd
+hi! link NeogitDiffDeleteHighlight  DiffDelete
+hi! link NeogitDiffHeaderHighlight  DiffFile
+hi! link NeogitHunkHeaderCursor     DiffFile
+hi! link NeogitDiffContextCursor    DiffFile
+hi! link NeogitDiffAddCursor        DiffAdd
+hi! link NeogitDiffDeleteCursor     DiffDelete
+hi! link NeogitDiffHeaderCursor     DiffFile
+
+hi! link NeogitChangeModified DiffFile
+hi! link NeogitChangeAdded    DiffAdd
+hi! link NeogitChangeDeleted  DiffDelete
+hi! link NeogitChangeRenamed  DiffChange
+hi! link NeogitChangeUpdated  DiffChange
+hi! link NeogitChangeCopied   DiffChange
+hi! link NeogitChangeNewFile  DiffAdd
+hi! link NeogitChangeUnmerged DiffChange

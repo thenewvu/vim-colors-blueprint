@@ -133,13 +133,13 @@ hi        Operator guifg=#abede0 guibg=none    gui=none
 hi         Keyword guifg=#b8edab guibg=none    gui=none
 hi       Exception guifg=#b8edab guibg=none    gui=none
 
-hi         Special guifg=#abede0 guibg=none    gui=none
+hi         Special guifg=none    guibg=none    gui=standout
 hi     SpecialChar guifg=#abede0 guibg=none    gui=none
-hi             Tag guifg=#abede0 guibg=none    gui=none
+hi             Tag guifg=#abede0 guibg=none    gui=standout
 hi       Delimiter guifg=#80a8cb guibg=none    gui=none
 hi           Noise guifg=#80a8cb guibg=none    gui=none
-hi  SpecialComment guifg=#ede0ab guibg=none    gui=none
-hi           Debug guifg=#ede0ab guibg=none    gui=none
+hi  SpecialComment guifg=#80a8cb guibg=none    gui=bold,italic
+hi           Debug guifg=#80a8cb guibg=none    gui=italic
 
 " ----------
 " - C like -
@@ -449,8 +449,8 @@ hi! link TelescopeNormal NormalFloat
 hi! link TelescopeBorder FloatBorder
 hi! link TelescopePreviewNormal NormalFloat
 hi! link TelescopeResultsNormal NormalFloat
-hi TelescopeSelection gui=standout
-hi TelescopeMultiSelection gui=standout
+hi TelescopeSelection guifg=none guibg=#80a8cb gui=none
+hi TelescopeMultiSelection guifg=none guibg=#80a8cb gui=none
 
 hi! link TreesitterContextLineNumber CursorLine
 hi! link TreesitterContext CursorLine

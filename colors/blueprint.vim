@@ -16,7 +16,7 @@ let g:colors_name="blueprint"
 " bg      = #335b7e hsl(208, 42%, 35%)
 
 " black   = #2c4e6c hsl(208, 42%, 30%)
-" white   = #5c8fbc hsl(208, 42%, 65%)
+" white   = #4376a3 hsl(208, 42%, 50%)
 " yellow  = #7f7f43 hsl( 60, 31%, 38%)
 " green   = #437f43 hsl(120, 31%, 38%)
 " cyan    = #437f7f hsl(180, 31%, 38%)
@@ -25,7 +25,7 @@ let g:colors_name="blueprint"
 " red     = #a05454 hsl(360, 31%, 38%)
 "
 " black   = #305575 hsl(208, 42%, 32%)
-" white   = #80a8cb
+" white   = #80a8cb hsl(208, 42%, 65%)
 " yellow  = #ede0ab hsl( 48, 64%, 80%)
 " green   = #b8edab hsl(108, 64%, 80%)
 " cyan    = #abede0 hsl(168, 64%, 80%)
@@ -94,8 +94,8 @@ hi         MsgArea guifg=#ede0ab guibg=#2c4e6c gui=none
 " - Visual aid -
 " --------------
 hi      MatchParen guifg=none    guibg=none    gui=underline
-hi          Visual guifg=none    guibg=#5c8fbc gui=none
-hi       VisualNOS guifg=none    guibg=#5c8fbc gui=none
+hi          Visual guifg=none    guibg=#4376a3 gui=none
+hi       VisualNOS guifg=none    guibg=#4376a3 gui=none
 hi         NonText guifg=#2c4e6c guibg=none    gui=none
 hi            Todo guifg=#ede0ab guibg=#7f7f43 gui=none
 hi      Underlined guifg=none    guibg=none    gui=underline
@@ -169,8 +169,8 @@ hi        DiffFile guifg=#ede0ab guibg=#2c4e6c gui=none
 " Completion menu
 " --------------------------------
 hi           Pmenu guifg=#abede0    guibg=#2c4e6c gui=none
-hi        PmenuSel guifg=none       guibg=#5c8fbc gui=none
-hi       PmenuSbar guifg=none       guibg=#5c8fbc gui=none
+hi        PmenuSel guifg=none       guibg=#4376a3 gui=none
+hi       PmenuSbar guifg=none       guibg=#4376a3 gui=none
 hi      PmenuThumb guifg=#abede0    guibg=#abede0 gui=none
 
 " --------------------------------
@@ -449,8 +449,8 @@ hi! link TelescopeNormal NormalFloat
 hi! link TelescopeBorder FloatBorder
 hi! link TelescopePreviewNormal NormalFloat
 hi! link TelescopeResultsNormal NormalFloat
-hi TelescopeSelection guifg=none guibg=#5c8fbc gui=none
-hi TelescopeMultiSelection guifg=none guibg=#5c8fbc gui=none
+hi TelescopeSelection guifg=none guibg=#4376a3 gui=none
+hi TelescopeMultiSelection guifg=none guibg=#4376a3 gui=none
 
 hi! link TreesitterContextLineNumber CursorLine
 hi! link TreesitterContext CursorLine

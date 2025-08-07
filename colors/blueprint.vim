@@ -44,6 +44,7 @@ hi          Normal guifg=#ffffff guibg=#335b7e gui=none
 hi          Cursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi         vCursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi         iCursor guifg=#2c4e6c guibg=#abede0 gui=none
+hi         tCursor guifg=#2c4e6c guibg=#abede0 gui=none
 hi      CursorLine guifg=none    guibg=#305575 gui=none
 hi          LineNr guifg=#80a8cb guibg=#305575 gui=none
 hi    CursorLineNR guifg=#ffffff guibg=#305575 gui=none
@@ -72,8 +73,8 @@ hi     NormalFloat guifg=#ffffff guibg=#2c4e6c gui=none
 " - File Navigation / Searching -
 " -------------------------------
 hi       Directory guifg=#ffffff guibg=none    gui=underline
-hi    Search guifg=#2c4e6c guibg=#ffffff gui=none
-hi IncSearch guifg=#2c4e6c guibg=#ffffff gui=none
+hi    Search guifg=none guibg=none gui=standout
+hi IncSearch guifg=none guibg=none gui=standout
 
 " -----------------
 " - Prompt/Status -
@@ -84,7 +85,7 @@ hi          WinBar guifg=#80a8cb guibg=#2c4e6c gui=none
 hi        WinBarNC guifg=#80a8cb guibg=#2c4e6c gui=none
 hi        WildMenu guifg=#80a8cb guibg=#2c4e6c gui=none
 hi        Question guifg=#ede0ab guibg=#2c4e6c gui=none
-hi           Title guifg=#b8edab guibg=#2c4e6c gui=none
+hi           Title guifg=#b8edab guibg=#2c4e6c gui=bold,underline
 hi         ModeMsg guifg=#ede0ab guibg=#2c4e6c gui=none
 hi         MoreMsg guifg=#ede0ab guibg=#2c4e6c gui=none
 hi         MsgArea guifg=#ede0ab guibg=#2c4e6c gui=none
@@ -158,11 +159,11 @@ hi         Typedef guifg=#abede0 guibg=none    gui=none
 " --------------------------------
 " Diff
 " --------------------------------
-hi         DiffAdd guifg=#b8edab guibg=#305575 gui=none
-hi      DiffChange guifg=#ede0ab guibg=#305575 gui=none
-hi      DiffDelete guifg=#edabb8 guibg=#305575 gui=none
-hi        DiffText guifg=#ede0ab guibg=#305575 gui=standout
-hi        DiffFile guifg=#ede0ab guibg=#2c4e6c gui=none
+hi         DiffAdd guifg=none guibg=#437f7f gui=none
+hi      DiffChange guifg=none guibg=#7f7f43 gui=none
+hi      DiffDelete guifg=none guibg=#a05454 gui=none
+hi        DiffText guifg=none guibg=#a05454 gui=none
+hi        DiffFile guifg=none guibg=#7f7f43 gui=bold,underline
 
 
 " --------------------------------
@@ -220,6 +221,8 @@ hi! link gitcommitUnmergedArrow  gitcommitUnmergedFile
 hi! GitGutterAdd     guifg=#437f43 guibg=#437f43 
 hi! GitGutterChange  guifg=#7f7f43 guibg=#7f7f43 
 hi! GitGutterDelete  guifg=#a05454 guibg=#a05454 
+
+hi! link TermCursor DiffChange
 
 hi       LspDiagnosticsVirtualTextError guifg=#edabb8 guibg=#305575 gui=italic
 hi     LspDiagnosticsVirtualTextWarning guifg=#ede0ab guibg=#305575 gui=italic
@@ -466,8 +469,8 @@ hi! link    NeogitDiffContextCursor     Noise
 
 hi! link NeogitHunkHeader  DiffFile
 hi! link NeogitDiffContext Noise
-hi! link NeogitDiffAdd     DiffAdd
-hi! link NeogitDiffDelete  DiffDelete
+hi NeogitDiffAdd     guifg=#b8edab guibg=#2c4e6c gui=none
+hi NeogitDiffDelete  guifg=#edabb8 guibg=#2c4e6c gui=none
 hi! link NeogitDiffHeader  DiffFile
 hi! link NeogitHunkHeaderHighlight  DiffFile
 hi! link NeogitDiffContextHighlight Noise
@@ -481,8 +484,8 @@ hi! link NeogitDiffDeleteCursor     DiffDelete
 hi! link NeogitDiffHeaderCursor     DiffFile
 
 hi! link NeogitChangeModified DiffFile
-hi! link NeogitChangeAdded    DiffAdd
-hi! link NeogitChangeDeleted  DiffDelete
+hi NeogitChangeAdded    guifg=#b8edab guibg=#2c4e6c gui=none
+hi NeogitChangeDeleted  guifg=#edabb8 guibg=#2c4e6c gui=none
 hi! link NeogitChangeRenamed  DiffChange
 hi! link NeogitChangeUpdated  DiffChange
 hi! link NeogitChangeCopied   DiffChange
